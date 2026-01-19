@@ -1,0 +1,48 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+#lightbox img {
+  width: 60%;
+  margin-top: 5%;
+}
+
+button {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.close {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
